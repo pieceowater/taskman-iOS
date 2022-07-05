@@ -13,7 +13,8 @@ struct taskmanApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            Auth()
+            MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
