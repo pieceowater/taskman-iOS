@@ -11,6 +11,7 @@ struct MainHeader: View {
     @State var PageText: String = "Taskman."
     @State var UserAvatar: String = "user-avatar"
     
+    
     var body: some View {
         ZStack{
             Color.init(hex: "494848")
@@ -29,7 +30,6 @@ struct MainHeader: View {
                         .font(.system(size: 16, weight: .regular, design: .default))
                 }
                 Spacer()
-                 
                 ZStack{
                     Color.init(hex: "FBC42C")
                         .frame(width: 45, height: 45)
