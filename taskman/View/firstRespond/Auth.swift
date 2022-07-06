@@ -82,6 +82,8 @@ struct Auth: View {
 }
 }
 
+
+
 struct Auth_Previews: PreviewProvider {
     static var previews: some View {
         Auth()

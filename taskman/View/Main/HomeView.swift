@@ -12,8 +12,13 @@ struct HomeView: View {
         ZStack {
             Color.init(hex: "333333")
             .ignoresSafeArea()
-            Text("Home")
-                .foregroundColor(.white)
+            VStack{
+                MainHeader()
+                    .padding(.leading, 10)
+                    .padding(.trailing, 10)
+             
+                Spacer()
+            }
         }
     }
 }

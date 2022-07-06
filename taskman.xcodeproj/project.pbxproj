@@ -13,11 +13,12 @@
 		C20FC6CB28683737005C6A1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20FC6CA28683737005C6A1A /* Preview Assets.xcassets */; };
 		C20FC6CD28683737005C6A1A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20FC6CC28683737005C6A1A /* Persistence.swift */; };
 		C20FC6D028683737005C6A1A /* taskman.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C20FC6CE28683737005C6A1A /* taskman.xcdatamodeld */; };
+		C21592C628748AA60041F4FA /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21592C528748AA60041F4FA /* NotificationsView.swift */; };
+		C21592C828748C8E0041F4FA /* MainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21592C728748C8E0041F4FA /* MainHeader.swift */; };
 		C28411FF28735DD7001E807E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28411FE28735DD7001E807E /* HomeView.swift */; };
 		C284120128735E78001E807E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C284120028735E78001E807E /* MainView.swift */; };
 		C284120328735EA1001E807E /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C284120228735EA1001E807E /* TeamView.swift */; };
 		C284120528735ECC001E807E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C284120428735ECC001E807E /* SettingsView.swift */; };
-		C284120728735EE7001E807E /* ExitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C284120628735EE7001E807E /* ExitView.swift */; };
 		C2D5CEEF287184C700015495 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D5CEEE287184C700015495 /* TaskListView.swift */; };
 		C2D5CEF2287185DA00015495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D5CEF1287185DA00015495 /* LaunchScreen.storyboard */; };
 		C2D5CEF52871889A00015495 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D5CEF42871889A00015495 /* Auth.swift */; };
@@ -36,11 +37,12 @@
 		C20FC6CA28683737005C6A1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C20FC6CC28683737005C6A1A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C20FC6CF28683737005C6A1A /* taskman.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = taskman.xcdatamodel; sourceTree = "<group>"; };
+		C21592C528748AA60041F4FA /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		C21592C728748C8E0041F4FA /* MainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeader.swift; sourceTree = "<group>"; };
 		C28411FE28735DD7001E807E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C284120028735E78001E807E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C284120228735EA1001E807E /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		C284120428735ECC001E807E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		C284120628735EE7001E807E /* ExitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitView.swift; sourceTree = "<group>"; };
 		C2D5CEEE287184C700015495 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		C2D5CEF1287185DA00015495 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2D5CEF42871889A00015495 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
@@ -107,7 +109,7 @@
 				C28411FE28735DD7001E807E /* HomeView.swift */,
 				C284120228735EA1001E807E /* TeamView.swift */,
 				C284120428735ECC001E807E /* SettingsView.swift */,
-				C284120628735EE7001E807E /* ExitView.swift */,
+				C21592C528748AA60041F4FA /* NotificationsView.swift */,
 				C284120028735E78001E807E /* MainView.swift */,
 			);
 			path = Main;
@@ -150,6 +152,7 @@
 				C2D5CF012871902600015495 /* LabeledInput.swift */,
 				C2E1CC882871AC99009A8505 /* LabeledPasswordInput.swift */,
 				C2E1CC8B2871C248009A8505 /* SubmitButton.swift */,
+				C21592C728748C8E0041F4FA /* MainHeader.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -229,9 +232,11 @@
 				C20FC6CD28683737005C6A1A /* Persistence.swift in Sources */,
 				C284120128735E78001E807E /* MainView.swift in Sources */,
 				C20FC6C628683734005C6A1A /* ContentView.swift in Sources */,
+				C21592C828748C8E0041F4FA /* MainHeader.swift in Sources */,
 				C2D5CEEF287184C700015495 /* TaskListView.swift in Sources */,
 				C2E1CC8C2871C248009A8505 /* SubmitButton.swift in Sources */,
 				C284120328735EA1001E807E /* TeamView.swift in Sources */,
+				C21592C628748AA60041F4FA /* NotificationsView.swift in Sources */,
 				C2D5CF022871902600015495 /* LabeledInput.swift in Sources */,
 				C20FC6C428683734005C6A1A /* taskmanApp.swift in Sources */,
 				C20FC6D028683737005C6A1A /* taskman.xcdatamodeld in Sources */,
@@ -239,7 +244,6 @@
 				C2E1CC892871AC99009A8505 /* LabeledPasswordInput.swift in Sources */,
 				C28411FF28735DD7001E807E /* HomeView.swift in Sources */,
 				C2D5CEFE28718D9000015495 /* Logo.swift in Sources */,
-				C284120728735EE7001E807E /* ExitView.swift in Sources */,
 				C2D5CEF7287188A100015495 /* Reg.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

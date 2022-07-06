@@ -17,31 +17,86 @@ struct MainView: View {
             TabView(selection: $selectedTab) {
                     HomeView()
                         .tabItem {
-                            Image("house")
+                            Label("", systemImage: "house")
                         }.tag(0)
                     
                     TeamView()
                         .tabItem {
-                            Image("team")
+                            Label("", systemImage: "person")
                         }.tag(1)
+                    
+                NotificationsView()
+                        .tabItem {
+                            Label("", systemImage: "bell")
+                        }.tag(2)
                     
                     SettingsView()
                         .tabItem {
-                            Image("gear")
-                        }.tag(2)
-                    
-                    ExitView()
-                        .tabItem {
-                            Image("exit")
+                            Label("", systemImage: "gear")
+                            
                         }.tag(3)
-            }
-            .accentColor(.white)
+                    
+            }.accentColor(Color.init(hex: "FBC42C"))
             .edgesIgnoringSafeArea(.all)
         }
         .edgesIgnoringSafeArea(.all)
             
     }
 }
+
+extension UIView {
+        
+        func allSubviews() -> [UIView] {
+            var res = self.subviews
+            for subview in self.subviews {
+                let riz = subview.allSubviews()
+                res.append(contentsOf: riz)
+            }
+            return res
+        }
+    }
+    
+    struct Tool {
+        static func showTabBar() {
+            UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.allSubviews().forEach({ (v) in
+                if let view = v as? UITabBar {
+                    view.isHidden = false
+                }
+            })
+        }
+        
+        static func hiddenTabBar() {
+            UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.allSubviews().forEach({ (v) in
+                if let view = v as? UITabBar {
+                    view.isHidden = true
+                }
+            })
+        }
+    }
+    
+    struct ShowTabBar: ViewModifier {
+        func body(content: Content) -> some View {
+            return content.padding(.zero).onAppear {
+                Tool.showTabBar()
+            }
+        }
+    }
+    struct HiddenTabBar: ViewModifier {
+        func body(content: Content) -> some View {
+            return content.padding(.zero).onAppear {
+                Tool.hiddenTabBar()
+            }
+        }
+    }
+    
+    extension View {
+        func showTabBar() -> some View {
+            return self.modifier(ShowTabBar())
+        }
+        func hiddenTabBar() -> some View {
+            return self.modifier(HiddenTabBar())
+        }
+    }
 
 extension UIColor {
    convenience init(red: Int, green: Int, blue: Int) {
