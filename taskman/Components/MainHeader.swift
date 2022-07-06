@@ -11,7 +11,6 @@ struct MainHeader: View {
     @State var PageText: String = "Taskman."
     @State var UserAvatar: String = "user-avatar"
     
-    
     var body: some View {
         ZStack{
             Color.init(hex: "494848")
