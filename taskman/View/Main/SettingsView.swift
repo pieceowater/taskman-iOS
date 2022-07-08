@@ -27,6 +27,7 @@ struct SettingsView: View {
                                 .resizable()
                                 .frame(width: 120, height: 75)
                                 .shadow(color: Color.init(hex: "303030"), radius: 15, x: 0, y: 5)
+                                
                             Text("Developers")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .regular, design: .default))

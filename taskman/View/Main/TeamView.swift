@@ -16,7 +16,12 @@ struct TeamView: View {
                 MainHeader(PageText: "Team.")
                     .padding(.leading, 10)
                     .padding(.trailing, 10)
+                
                 Spacer()
+                FilterTab(location: "team", selected: "team")
+                    .padding(.leading, 10)
+                    .padding(.trailing, 10)
+                    .padding(.bottom, 15)
             }
         }
     }

@@ -18,6 +18,11 @@ struct HomeView: View {
                     .padding(.trailing, 10)
              
                 Spacer()
+                
+                FilterTab(location: "tasklist", selected: "all")
+                    .padding(.leading, 10)
+                    .padding(.trailing, 10)
+                    .padding(.bottom, 15)
             }
         }
     }
