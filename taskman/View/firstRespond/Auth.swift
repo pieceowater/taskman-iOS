@@ -123,7 +123,7 @@ struct ShadowButtonStyle: ButtonStyle {
     configuration.label
       .shadow(
         color: configuration.isPressed ? Color.init(hex: "FBC42C") : Color.init(hex: "6B6B6B"),
-        radius: 2, x: 0, y: 3
+        radius: 2, x: 0, y: 1
       )
   }
 }

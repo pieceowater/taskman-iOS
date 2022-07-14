@@ -14,7 +14,10 @@ struct taskmanApp: App {
     var body: some Scene {
         WindowGroup {
 //            Auth()
-            MainView()
+//            MainView()
+            
+//            temp \/\/\/\/
+            MyProfileView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

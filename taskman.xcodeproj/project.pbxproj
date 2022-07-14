@@ -15,6 +15,8 @@
 		C20FC6D028683737005C6A1A /* taskman.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C20FC6CE28683737005C6A1A /* taskman.xcdatamodeld */; };
 		C21592C628748AA60041F4FA /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21592C528748AA60041F4FA /* NotificationsView.swift */; };
 		C21592C828748C8E0041F4FA /* MainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21592C728748C8E0041F4FA /* MainHeader.swift */; };
+		C217973B287F46B100EE8ED3 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C217973A287F46B100EE8ED3 /* MyProfileView.swift */; };
+		C217973D287F473900EE8ED3 /* InnerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C217973C287F473900EE8ED3 /* InnerHeader.swift */; };
 		C28411FF28735DD7001E807E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28411FE28735DD7001E807E /* HomeView.swift */; };
 		C284120128735E78001E807E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C284120028735E78001E807E /* MainView.swift */; };
 		C284120328735EA1001E807E /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C284120228735EA1001E807E /* TeamView.swift */; };
@@ -40,6 +42,8 @@
 		C20FC6CF28683737005C6A1A /* taskman.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = taskman.xcdatamodel; sourceTree = "<group>"; };
 		C21592C528748AA60041F4FA /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		C21592C728748C8E0041F4FA /* MainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeader.swift; sourceTree = "<group>"; };
+		C217973A287F46B100EE8ED3 /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
+		C217973C287F473900EE8ED3 /* InnerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerHeader.swift; sourceTree = "<group>"; };
 		C28411FE28735DD7001E807E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C284120028735E78001E807E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C284120228735EA1001E807E /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C2179739287F468000EE8ED3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C217973A287F46B100EE8ED3 /* MyProfileView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		C28411FD28735DB3001E807E /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +132,7 @@
 		C2D5CEED287184A700015495 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C2179739287F468000EE8ED3 /* Screens */,
 				C28411FD28735DB3001E807E /* Main */,
 				C2D5CEF32871887000015495 /* firstRespond */,
 				C2D5CEEE287184C700015495 /* TaskListView.swift */,
@@ -156,6 +169,7 @@
 				C2E1CC8B2871C248009A8505 /* SubmitButton.swift */,
 				C21592C728748C8E0041F4FA /* MainHeader.swift */,
 				C2E7574E2877289800D39FC6 /* FilterTab.swift */,
+				C217973C287F473900EE8ED3 /* InnerHeader.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -236,10 +250,12 @@
 				C284120128735E78001E807E /* MainView.swift in Sources */,
 				C20FC6C628683734005C6A1A /* ContentView.swift in Sources */,
 				C21592C828748C8E0041F4FA /* MainHeader.swift in Sources */,
+				C217973D287F473900EE8ED3 /* InnerHeader.swift in Sources */,
 				C2D5CEEF287184C700015495 /* TaskListView.swift in Sources */,
 				C2E1CC8C2871C248009A8505 /* SubmitButton.swift in Sources */,
 				C284120328735EA1001E807E /* TeamView.swift in Sources */,
 				C21592C628748AA60041F4FA /* NotificationsView.swift in Sources */,
+				C217973B287F46B100EE8ED3 /* MyProfileView.swift in Sources */,
 				C2D5CF022871902600015495 /* LabeledInput.swift in Sources */,
 				C20FC6C428683734005C6A1A /* taskmanApp.swift in Sources */,
 				C20FC6D028683737005C6A1A /* taskman.xcdatamodeld in Sources */,
